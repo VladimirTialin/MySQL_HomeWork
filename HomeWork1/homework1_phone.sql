@@ -31,8 +31,7 @@ CREATE TABLE `phone` (
   `memory` int NOT NULL DEFAULT '16' COMMENT 'Объем памяти телефона',
   `color` varchar(20) NOT NULL COMMENT 'Цвет',
   `price` int NOT NULL DEFAULT '0' COMMENT 'Цена',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `model_UNIQUE` (`model`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -55,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-10 23:41:38
+-- Dump completed on 2022-12-11 11:11:35
