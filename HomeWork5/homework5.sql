@@ -58,5 +58,5 @@ station_time time
 SELECT * FROM trainSchedule;
 
 SELECT train_id, station, station_time, TIMEDIFF(LEAD (station_time)
-OVER (PARTITION BY train_id), station_time)
+OVER (PARTITION BY train_id ORDER BY station_time), station_time)
 AS 'time_to_next_station' FROM trainSchedule;
